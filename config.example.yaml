@@ -1,0 +1,15 @@
+# Copie para config.yaml e edite. Valores de exemplo, não são cotações reais.
+operacao:
+  spot: 5.40          # USD/BRL à vista
+  strike: 5.45        # taxa contratada (BRL por USD)
+  nocional_usd: 1000000
+  dias_uteis: 63      # prazo em dias úteis (base 252)
+  dias_corridos: 91   # prazo em dias corridos
+  tipo_opcao: call    # call ou put
+  vol_anual: 0.14     # volatilidade anualizada
+mercado:
+  taxa_pre: 0.145     # DI x pré efetiva a.a. para o prazo
+  taxa_usd: 0.043     # taxa USD simples a.a. (ex.: SOFR)
+monte_carlo:
+  n_caminhos: 200000
+  seed: 42
